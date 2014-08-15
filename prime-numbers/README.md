@@ -30,6 +30,26 @@ i = 9 => j=2 and j is less than 9 => 9%2 is not 0
          j=3 and j is less than 9 => 9%3 is 0 => not prime we break the loop
 </pre>
 
- - output 1 -> 
 PrimeNumberOptimized
 =======
+
+<pre>
+//Output
+/*
+2
+3
+5
+7
+11
+13
+17
+19
+23
+29
+31
+........
+9967
+9973
+Nr of prime numbers found: 1229
+*/
+</pre>
