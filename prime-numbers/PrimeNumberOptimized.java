@@ -1,3 +1,5 @@
+//Read here - http://www.javadb.com/how-to-find-and-calculate-prime-numbers/
+
 public class PrimeNumberOptimized {
     private final int UPPER_LIMIT = 10000;
     public void calculatePrimeNumbers() {
