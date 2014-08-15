@@ -8,5 +8,28 @@ Prime numbers between 1 and 100
 1 2 3 5 7 11 13 17 19 23 29 31 37 41 43 47 53 59 61 67 71 73 79 83 89 97
 */
 </pre>
+
+<pre>
+i = 1 => j=2 and j not less than 1 => 1 is prime
+i = 2 => j=2 and j not less than 2 => 2 is prime
+i = 3 => j=2 and j is less than 3 => 3%2 is not 0
+         j=3 and j not less than 3 => 3 is prime
+i = 4 => j=2 and j is less than 4 => 4%2 is 0 => not prime we break the loop
+i = 5 => j=2 and j is less than 5 => 5%2 is not 0
+         j=3 and j is less than 5 => 5%3 is not 0
+         j=4 and j is less than 5 => 5%4 is not 0
+         j=5 and j not less than 5 => 5 is prime
+i = 6 => j=2 and j is less than 6 => 6%2 is 0 => not prime we break the loop
+i = 7 => j=2 and j is less than 7 => 7%2 is not 0
+         j=3 and j is less than 7 => 7%3 is not 0
+         j=4 and j is less than 7 => 7%4 is not 0
+         j=5 and j is less than 7 => 7%5 is not 0
+         j=6 and j is less than 7 => 7%6 is not 0
+         j=7 and j not less than 7 => 7 is prime
+i = 9 => j=2 and j is less than 9 => 9%2 is not 0
+         j=3 and j is less than 9 => 9%3 is 0 => not prime we break the loop
+</pre>
+
+ - output 1 -> 
 PrimeNumberOptimized
 =======
