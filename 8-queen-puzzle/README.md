@@ -1,3 +1,5 @@
+#8 Queen Puzzle
+
 http://en.wikipedia.org/wiki/Eight_queens_puzzle
 
 http://www.animatedrecursion.com/advanced/the_eight_queens_problem.html
