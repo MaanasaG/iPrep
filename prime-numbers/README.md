@@ -1,13 +1,10 @@
 PrimeNumberSimple 
 =======
-
-<pre>
-//Output
-/*
-Prime numbers between 1 and 100
-1 2 3 5 7 11 13 17 19 23 29 31 37 41 43 47 53 59 61 67 71 73 79 83 89 97
-*/
-</pre>
+1. define limit
+1. loop i - through the numbers one to limit
+1. loop j from 2 to less than i
+1. Use modulus to check the number is prime
+1. If modulus never becomes zero in j loop the number is prime
 
 <pre>
 i = 1 => j=2 and j not less than 1 => 1 is prime
@@ -30,8 +27,19 @@ i = 9 => j=2 and j is less than 9 => 9%2 is not 0
          j=3 and j is less than 9 => 9%3 is 0 => not prime we break the loop
 </pre>
 
+<pre>
+//Output
+/*
+Prime numbers between 1 and 100
+1 2 3 5 7 11 13 17 19 23 29 31 37 41 43 47 53 59 61 67 71 73 79 83 89 97
+*/
+</pre>
+
 PrimeNumberOptimized
 =======
+
+<pre>
+</pre>
 
 <pre>
 //Output
