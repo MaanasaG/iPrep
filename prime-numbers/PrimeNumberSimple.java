@@ -1,3 +1,4 @@
+//Read - http://www.java-examples.com/prime-numbers-java-example
 public class PrimeNumberSimple {
   public static void main(String[] args) {
     //define limit
