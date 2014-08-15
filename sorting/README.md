@@ -1,3 +1,3 @@
 #Sorting Techniques
 
-Pesudo code, key poitns will be explained here
+Pesudo code, key poitns will be go here
