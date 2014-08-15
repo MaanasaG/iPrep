@@ -1,5 +1,4 @@
 #PrimeNumberSimple 
-=======
 1. define limit - upper number - 100
 1. loop i - through the numbers one to limit
 1. loop j from 2 to less than i
@@ -38,8 +37,6 @@ Prime numbers between 1 and 100
 ---- 
 
 #PrimeNumberOptimized
-=======
-
 <pre>
 In the simple solution we try to divide every number we find with smaller numbers. In an optimized approach we want to avoid too many calculations. We can first calculate the square root of each number and then use that for the division.
 If a modulus calculation of all of the numbers below that square root number produces a result that is not equal to zero, then we have found a prime number.
