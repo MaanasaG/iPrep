@@ -1,6 +1,6 @@
 PrimeNumberSimple 
 =======
-1. define limit
+1. define limit - upper number - 100
 1. loop i - through the numbers one to limit
 1. loop j from 2 to less than i
 1. Use modulus to check the number is prime
@@ -40,9 +40,17 @@ Prime numbers between 1 and 100
 PrimeNumberOptimized
 =======
 
-
 <pre>
+In the simple solution we try to divide every number we find with smaller numbers. In an optimized approach to avoid making too many calculations we can first calculate the square root of each number and then use that for the division.
+If a modulus calculation of all of the numbers below that square root number produces a result that is not equal to zero, then we have found a prime number.
 </pre>
+
+1. define upper limit - 100
+1. loop i - thru i to 100
+1. calculate num = sqrt(i) and round to get whole number
+1. loop j - thru 2 to less than num
+1. Use modulus to check the number is prime
+1. If modulus never becomes zero in j loop the number is prime
 
 <pre>
 //Output
