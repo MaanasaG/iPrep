@@ -1,4 +1,4 @@
-PrimeNumberSimple 
+#PrimeNumberSimple 
 =======
 1. define limit - upper number - 100
 1. loop i - through the numbers one to limit
@@ -37,7 +37,7 @@ Prime numbers between 1 and 100
 
 ---- 
 
-PrimeNumberOptimized
+#PrimeNumberOptimized
 =======
 
 <pre>
