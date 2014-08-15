@@ -20,3 +20,5 @@
 
 <pre>2nd approach - when we push for the 1st time q1 will be empty
 from second time q1 will have some item in queue</pre>
+
+http://stackoverflow.com/questions/688276/implement-stack-using-two-queues
