@@ -35,8 +35,11 @@ Prime numbers between 1 and 100
 */
 </pre>
 
+---- 
+
 PrimeNumberOptimized
 =======
+
 
 <pre>
 </pre>
