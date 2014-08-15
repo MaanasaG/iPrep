@@ -3,7 +3,6 @@
 - Stack is last in first out (stack of dishes)
 
 ##Approach 1 - pop is expensive
-To simulate this
 1. whenever we call push()
     - we enqueue (push) to q1
 1. whenever we call pop()
