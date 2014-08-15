@@ -52,6 +52,14 @@ If a modulus calculation of all of the numbers below that square root number pro
 1. Use modulus to check the number is prime
 1. If modulus never becomes zero in j loop the number is prime
 
+
+<pre>
+i = 1 => sqrt(1) is 1 => j=2 and j not less than 1 => 1 is prime
+i = 2 => sqrt(2) is 1.41 which is 1 => j=2 and j not less than 2 => 2 is prime
+i = 3 => sqrt(3) is 1.72 which is 2 => j=2 and j not less than 2 => 3 is prime
+I wil update later
+</pre>
+
 <pre>
 //Output
 /*
