@@ -12,6 +12,10 @@ cab
 cba
 </pre>
 
+Looping Visualization
+-----
+![Image][https://raw.githubusercontent.com/MaanasaG/iPrep/master/permutations/PermutationStringSequence.JPG]
+
 Reading
 ------
 - http://www.mathsisfun.com/combinatorics/combinations-permutations.html
