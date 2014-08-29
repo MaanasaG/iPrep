@@ -4,6 +4,7 @@ public class PermutationCharArray {
   }
 
     // print N! permutation of the elements of array a (not in order)
+    // This method only converts string to char array 
     public static void permutation(String s) {
        int N = s.length();
        char[] a = new char[N];
