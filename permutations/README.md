@@ -14,7 +14,7 @@ cba
 
 Looping Visualization
 -----
-![Link to image](https://raw.githubusercontent.com/MaanasaG/iPrep/master/permutations/PermutationStringSequence.JPG]
+<img src="https://raw.githubusercontent.com/MaanasaG/iPrep/master/permutations/PermutationStringSequence.JPG">
 
 Reading
 ------
