@@ -14,6 +14,6 @@ cba
 
 Reading
 ------
-http://www.mathsisfun.com/combinatorics/combinations-permutations.html
-http://introcs.cs.princeton.edu/java/23recursion/Permutations.java.html
+- http://www.mathsisfun.com/combinatorics/combinations-permutations.html
+- http://introcs.cs.princeton.edu/java/23recursion/Permutations.java.html
 
