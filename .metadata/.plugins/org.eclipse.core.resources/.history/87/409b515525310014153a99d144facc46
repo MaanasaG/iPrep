@@ -1,0 +1,94 @@
+package com.org.simplePbms.Strings;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.List;
+import java.util.TreeSet;
+
+public class CopyOfLLPbm {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		List<String> input = new ArrayList<String>();	
+		//input.add(null);
+		input.add("GADEY,D,FREMONT,CA");
+		input.add("GADEY,A,FREMONT,CA");
+		input.add("GADEY,E,FREMONT,CA");
+		input.add("B,VAMSI,A,CA");
+		input.add("A,VAMSI,B,CA");
+		input.add("SMITH,JOHN,OAKLAND,CA");
+		input.add("C,LESLIE,OAKLAND,CA");
+		input.add("JONES,KATE,SAN JOSE,CA");
+		input.add("ZOEY,KATE,SAN JOSE,CA");
+		input.add("APES,KATE,SAN JOSE,CA");
+		input.add("BLACK,KATE,SAN JOSE,CA");	
+		input.add("SMITH,JOHN,OAKLAND,CA");
+		input.add("GADEY,VAMSI,D,CA");
+		input.add("GADEY,RIAN,SAN FRANCISCO,CA");
+		input.add("GADEY,MAANASA,FREMONT,CA");
+		input.add("GADEY,VAMSI,C,CA");
+		readData(input);
+	}
+
+	public static boolean readData(List<String> input) {
+		boolean b=false;
+		if(input.equals(null)){	
+			System.out.print("Null input is not vadlid...");
+			return false;
+		}
+		java.util.Iterator<String> itr = input.iterator();
+		
+		HashMap<String,TreeSet<String>> storeOutputMap = new HashMap<String,TreeSet<String>>();	
+		TreeSet<String> tempList; 
+		TreeSet<String> setOfValues; 
+		while(itr.hasNext()){
+			
+			String readRow = itr.next();
+			if(readRow==null){
+				return false;
+			}
+			if(!readRow.trim().isEmpty()) {
+				String[] tokens = readRow.split(","); 
+				if(tokens.equals(null)||tokens.length<4){
+					return false;
+				}
+				String keyCityState = new String(tokens[2]+","+tokens[3]);
+				String valuesName = tokens[1]+" "+tokens[0];
+				setOfValues = new TreeSet<String>();
+				setOfValues.add(valuesName);
+				if(storeOutputMap.containsKey(keyCityState)){
+					tempList = new TreeSet<String>();
+					tempList = storeOutputMap.get(keyCityState);
+					tempList.add(valuesName);
+					storeOutputMap.put(keyCityState, tempList);
+				}else{
+					storeOutputMap.put(keyCityState, setOfValues);
+					b= true;
+				}
+			}
+			else{
+				System.out.print("Invalid input...");
+				return false;
+			}
+		}
+		printOutput(storeOutputMap);
+		return b;
+	}
+
+	public static void printOutput(HashMap<String,TreeSet<String>> map){
+		Object[] keysFromMap = map.keySet().toArray();	
+		Arrays.sort(keysFromMap);
+		for(Object key : keysFromMap) {		
+				TreeSet<String> listMapValues= map.get(key);
+				System.out.println(key);				
+				Iterator<String> hashsetItr= listMapValues.iterator();
+				while(hashsetItr.hasNext()){
+					System.out.println(" "+hashsetItr.next());		
+			}
+		}	
+	}
+}

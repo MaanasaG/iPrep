@@ -1,0 +1,10 @@
+package com.org.simplePbms;
+
+public class LinkedListScratch {
+
+	private class ListNode{
+		private ListNode next;
+		private Object data;
+	}
+
+}

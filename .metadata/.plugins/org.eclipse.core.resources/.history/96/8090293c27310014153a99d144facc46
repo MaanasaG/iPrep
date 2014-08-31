@@ -1,0 +1,29 @@
+package com.org.strings;
+
+public class StringRotationPractice {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		String first= "Amazon";
+		String second= "maz";
+		System.out.println(checkRotation(first,second));
+
+	}
+
+	private static boolean checkRotation(String first, String second) {	
+		int loopThrough=0;
+		if(first.length()>second.length()){
+			loopThrough=first.length();
+		}
+		else{
+			loopThrough=second.length();		
+		}
+		
+		
+		return false;
+	}
+
+	
+}

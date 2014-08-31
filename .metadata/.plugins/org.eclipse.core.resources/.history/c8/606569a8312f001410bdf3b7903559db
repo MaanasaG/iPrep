@@ -1,0 +1,36 @@
+import java.util.StringTokenizer;
+
+
+public class Reverse {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		String input="My Name is Khan";
+	     mirrorReverse(input);
+	     wordReversal(input);
+	}
+		
+
+	private static void wordReversal(String input) {
+		StringBuffer output = new StringBuffer();
+		String[] tokens= input.split(" ");
+		StringTokenizer tokens1 = new StringTokenizer(input);
+		for (int i=tokens.length-1; i>=0; i--){	
+			output.append(tokens[i]);	
+			output.append(" ");
+		}
+		System.out.println("Word Reversal is: "+output.toString()+"\n");
+	}
+
+
+	private static void  mirrorReverse(String input) {
+		StringBuffer output = new StringBuffer();	
+		for (int i=input.length()-1; i>=0; i--){
+			output.append(input.charAt(i));
+		}
+      System.out.print("Mirror Reversal is: "+output.toString()+"\n");
+	}
+
+}

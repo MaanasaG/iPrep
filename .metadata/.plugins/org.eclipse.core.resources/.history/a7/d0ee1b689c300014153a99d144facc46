@@ -1,0 +1,13 @@
+package com.org.simplePbms;
+
+public class LinkedList {
+private Node head;
+
+
+ public void addNodeAtFirst(int data){
+	Node newNode = Node(data);
+	 
+	 
+}
+
+}

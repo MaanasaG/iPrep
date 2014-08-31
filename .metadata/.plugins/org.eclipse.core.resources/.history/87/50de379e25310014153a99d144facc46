@@ -1,0 +1,21 @@
+package com.org.strings;
+
+public class StringRotationPractice {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		String first= "Amazon";
+		String second= "maz";
+		System.out.println(checkRotation(first,second));
+
+	}
+
+	private static char[] checkRotation(String first, String second) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	
+}

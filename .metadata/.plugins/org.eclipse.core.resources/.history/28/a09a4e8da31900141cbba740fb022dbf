@@ -1,0 +1,16 @@
+package com.org.logicalpbms;
+
+
+import org.junit.Test;
+
+public class MissingNumberTest {
+
+	@Test
+	public void test() {
+		int n=10;
+		int[] list={0,1,2,3,4,5,7,8,9,10};		
+		
+		MissingNumber.findMissingNumber(list5,n);
+	}
+
+}

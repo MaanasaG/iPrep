@@ -1,0 +1,36 @@
+package com.org.logicalpbms;
+
+public class MissingNumber {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		int[] list={2,3,3,2,3};
+		int n=10;
+		findMissingNumber1(list,n);
+	}
+	
+		private static void findMissingNumber(int[] list, int n) {
+			int result = 0,sum=0; 
+			int sumOfN=(n*(n+1))/2;
+			if (n-list.length==1){		
+			for (int k=0;k<list.length;k++)
+			{
+			sum+=list[k];
+			}
+			if(sum>sumOfN){
+				System.out.println("Unacceptble Input!");
+			}
+			else if (sum<sumOfN){				
+				result=sumOfN-sum;
+				System.out.println("Missing Number is:"+result);
+			}		
+			else if (sum==sumOfN){				
+				System.out.println("Please check your input again. We dont see any missing numbers!");
+			}
+	      }
+		}
+	
+}
+

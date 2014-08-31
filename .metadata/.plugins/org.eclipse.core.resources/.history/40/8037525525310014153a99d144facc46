@@ -1,0 +1,24 @@
+package com.org.simplePbms.Strings;
+
+public class StringRotationPractice {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		String input= "Amazon";
+		System.out.println(rotateTwo(input));
+
+	}
+
+	private static String rotateTwo(String input) {
+		
+		input= input.substring(2)+input.substring(0,2);
+		
+		return input;
+		
+	}
+
+	
+	
+}

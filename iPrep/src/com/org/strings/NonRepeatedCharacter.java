@@ -1,0 +1,49 @@
+package com.org.strings;
+
+import java.util.HashSet;
+
+public class NonRepeatedCharacter {
+	
+			public static void main(String[] args) {
+				String input="Prashanthp";
+				
+				System.out.println(findfirstNonrepeatedNumber(input));	
+				//System.out.println(findfirstNonrepeatedNumberOtherWay(input));
+			    }
+			
+			
+			
+				public static char findfirstNonrepeatedNumber(String input) {
+					System.out.println("length of list :"+input.length());
+					char c='c';
+					int j;
+					if(input!=null&&(!(input.isEmpty())&input!=null&input.length()>0)){
+						for(int i=0;i<=input.length()-1;i++){
+							for (j=i+1;j<=input.length()-1;j++){
+								System.out.println(i);
+								System.out.println(j);
+							    if(input.charAt(i)==input.charAt(j)){							    							
+													
+								break;
+							}//if					
+					}//first for
+							if(j==input.length()){
+								c=input.charAt(i);
+								break;
+								
+							}
+						}
+						
+					}
+					if (c=='c'){				
+						System.out.println("Unacceptble Input!");
+					}
+					else{
+						System.out.println("Result :"+c);
+					}
+					return c;
+				}
+			
+				
+				
+}

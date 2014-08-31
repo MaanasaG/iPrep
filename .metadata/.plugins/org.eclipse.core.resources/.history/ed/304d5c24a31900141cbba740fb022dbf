@@ -1,0 +1,44 @@
+package com.org.logicalpbms;
+
+public class MissingNumber {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		int[] list={0,1};
+		int n=10;
+		if(findMissingNumber(list,n)==-1){
+		System.out.println("Sorry, we can't find missing number if the we have ONE number");       
+		}
+		else if(findMissingNumber(list,n)==-2){
+			System.out.println("Missing Number is:"+findMissingNumber(list,n));
+		}
+		else if(findMissingNumber(list,n)==-0){
+			System.out.println("Missing Number is:"+findMissingNumber(list,n));
+		}
+          
+	}
+
+	public static int findMissingNumber(int[] list,int n) {
+		int result=0,sum=0;
+		int sumOfN=(n*(n+1))/2;
+		int flag=0;
+		if(list.length==0){
+			flag=-1;
+		}
+		else{		
+		for (int k=0;k<list.length;k++)
+		{
+			sum+=list[k];
+		}
+		result=sumOfN-sum;	
+		}
+		if(result==0){
+			flag=-2;
+		}
+		return flag;
+			
+	}
+
+}

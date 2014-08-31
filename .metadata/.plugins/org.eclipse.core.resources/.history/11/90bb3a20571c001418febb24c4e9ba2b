@@ -1,0 +1,35 @@
+package com.org.simplePbms;
+
+public class EProblem2 {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		int n=10;
+		fib(n);
+
+	}
+	public static void fib(int number) {
+    	int a= 0;
+    	int i=0;
+    	int b= 1;
+    	int sumOfEven = 0;
+    	int[] result = null;
+    	if(number>=1){
+    	for (i=0;i<number;i++){
+    		a=a+b;  		
+    		b=a-b;
+    		System.out.print(a+",");
+    		result[i]=a;
+    	}
+    	System.out.println("END");
+    	System.out.println("sumOfEven"+sumOfEven);
+    	System.out.println(result[i]=a);
+    	}
+    	else{
+    		System.out.println("Invalid Input");
+    	}
+	}
+
+}

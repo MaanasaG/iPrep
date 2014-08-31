@@ -1,0 +1,21 @@
+package com.org.simplePbms;
+
+public class CheckAnagrams {
+
+	public static void main(String args[]){
+		String first="Rian";
+		String second = "inaR";
+		checkAnagrams(first,second);
+		
+		
+		
+	}
+
+	private static void checkAnagrams(String first, String second) {
+		int sum1,sum2=0;
+		
+		
+	}
+	
+	
+}

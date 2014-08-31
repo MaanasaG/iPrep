@@ -1,0 +1,18 @@
+package com.org.simplePbms;
+
+public class LinkedList{
+	private Node node;
+	
+	
+	public void addNodetoTail(){
+		
+	}
+	public void deleteNode(){
+		
+	}
+	public void addNodeAtFirst(){
+		
+	}
+	
+	
+}

@@ -1,0 +1,16 @@
+
+public class Reverse {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		String input="My name is khan";
+		StringBuffer output = new StringBuffer();
+		for (int i=input.length(); i>0; i++){
+			output.append(input.charAt(i));
+		}
+
+	}
+
+}

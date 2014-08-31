@@ -1,0 +1,29 @@
+package com.org.search;
+
+public class StringOperations {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+          String reservedString= doReverse("Maanasa");
+          //System.out.println(reservedString);
+          
+		
+	}
+
+	private static String doReverse(String str) {
+		String r = null;
+		for(int i=0;i<str.length();i++){
+			r=str.substring(i);
+			
+			 System.out.println(r);
+		}
+		
+		return r;
+		
+		
+	}
+
+}

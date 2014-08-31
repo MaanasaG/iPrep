@@ -1,0 +1,28 @@
+package com.org.simplePbms;
+
+public class EProblem2 {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		
+
+	}
+	public static void fib(int number) {
+    	int a= 0;
+    	int b= 1;
+    	if(number>=1){
+    	for (int i=0;i<number;i++){
+    		a=a+b;  		
+    		b=a-b;
+    		System.out.print(a+",");	
+    	}
+    	System.out.println("END");
+    	}
+    	else{
+    		System.out.println("Invalid Input");
+    	}
+	}
+
+}

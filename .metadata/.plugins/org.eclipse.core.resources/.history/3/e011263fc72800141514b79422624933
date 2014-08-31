@@ -1,0 +1,37 @@
+package com.org.simplePbms;
+
+public class LinkedListScratch {
+
+	private class ListNode{
+		private ListNode next;
+		private Object data;
+		public ListNode(){
+			
+	            this.data = null;
+	            this.next = null;
+	          
+		}
+		
+		 public ListNode(Object inputData) {
+	            this.data = inputData;
+	            this.next = null;
+	          }
+		 
+		 public Object getData() {
+	           return data;
+	            
+	          }
+		 public  void setData(Object setData) {
+	           
+	           this.data=setData; 
+	          }
+		 public  void setNext(ListNode setNext) {
+	           
+	           this.next=setNext; 
+	          }
+		 public  ListNode getNext() {    
+	           return next;
+	          }
+	}
+
+}

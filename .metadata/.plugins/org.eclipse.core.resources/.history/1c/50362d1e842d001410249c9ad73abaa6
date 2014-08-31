@@ -1,0 +1,13 @@
+package com.org.simplePbms;
+
+public class WordCountAndAppend {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		String s ="My name is Maanasa";
+
+	}
+
+}

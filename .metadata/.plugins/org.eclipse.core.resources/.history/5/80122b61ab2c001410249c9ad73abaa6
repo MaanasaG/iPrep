@@ -1,0 +1,25 @@
+package com.org.simplePbms;
+
+import java.util.Scanner;
+
+public class DecimalToBinary {
+	 
+    public void printBinaryFormat(int number){
+      
+         String s ="";
+        for(int i = 0;i<=8;i++){
+           if(number%2==1){
+        	   s=1+s;
+           }
+           if(number%2==0){
+        	   s=0+s;
+           }
+           number=number/2;
+        }
+    }
+     
+    public static void main(String a[]){
+        DecimalToBinary dtb = new DecimalToBinary();
+        dtb.printBinaryFormat(13);
+    }
+}

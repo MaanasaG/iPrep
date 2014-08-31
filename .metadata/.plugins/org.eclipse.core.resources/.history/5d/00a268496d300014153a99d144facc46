@@ -1,0 +1,16 @@
+package com.org.sorting;
+
+public class InsertionSort {
+
+	
+	public static void main(String[] args) {
+		int[] A={3,9,1,6,28,5};
+		InsertionSorter(A);
+	}
+
+	private static void InsertionSorter(final int[] a) {
+		
+		
+		
+	}
+}

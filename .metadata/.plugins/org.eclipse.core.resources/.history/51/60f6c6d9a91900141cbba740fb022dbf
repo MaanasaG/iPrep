@@ -1,0 +1,15 @@
+package com.org.logicalpbms;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class MissingNumberTest {
+
+	@Test
+	public void test() {
+		int[] list={0};
+		int n=10;
+	}
+
+}

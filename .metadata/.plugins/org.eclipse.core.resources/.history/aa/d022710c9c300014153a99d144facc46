@@ -1,0 +1,9 @@
+package com.org.simplePbms;
+
+public class LinkedList {
+private Node head;
+
+
+
+
+}

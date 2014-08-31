@@ -1,0 +1,25 @@
+package com.org.simplePbms.Arrays;
+
+public class NonRepeatedNumber {
+	
+			public static void main(String[] args) {
+				int[] list={233344299,233344299,233344299,233344299,233344299};
+				System.out.println(findfirstNonrepeatedNumber(list));				
+			    }
+			
+				public static int findfirstNonrepeatedNumber(int[] input) {
+					int[] charCount = new int[256];	
+					int i;
+					for(i=0;i<=input.length;i++){		
+					charCount[input[i]]++;	
+					System.out.println("------>"+input[i]+"is: "+charCount[input[i]]);
+					}//for 1
+					for(i=0;i<input.length;i++){
+						if(charCount[input[i]]==1){
+							return input[i] ;
+						}
+						//if	
+					}//for 2
+					return 0;
+				}//method	
+}

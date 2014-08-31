@@ -1,0 +1,28 @@
+package com.org.simplePbms;
+
+public class LinkedListDemo {
+	
+	public static void main(String[] args){
+LinkedList list = new LinkedList();
+list.addNodeAtFirst(12);
+list.addNodeAtFirst(15);
+list.addNodeAtFirst(14);
+list.addNodeAtFirst(19);
+//list.deleteHead();
+list.deleteMiddle(19);
+System.out.println(list);
+System.out.println(list.getSize());
+reverse(list);
+	}
+
+public static LinkedList reverse(Node n) {
+    LinkedList previous = null;
+    while (n != null) {
+        Node next = n.getNextNode();
+        n.getNextNode() = previous;
+        previous = Node;
+        Node = next;
+    }
+    return previous;
+}
+}

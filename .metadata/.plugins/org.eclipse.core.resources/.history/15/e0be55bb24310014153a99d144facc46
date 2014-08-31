@@ -1,0 +1,33 @@
+package com.org.simplePbms;
+
+public class StringReversal {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		System.out.println(reserveWords("Skype is a collaborative tool"));
+	}
+	private static String reserveWords(String string) {
+		String[] result =string.split(" ");
+		String output="";
+		for(int i=result.length-1;i>=0;i--){
+			output=output+result[i]+" ";
+		}
+		
+		return output.trim();
+	}
+	public static String stringReverseRecursion(String input){
+		String output="";
+		
+		
+		return output;
+		
+	}
+	public static String stringReverse(String input){
+		String output=new StringBuffer(input).reverse().toString()	;
+	    System.out.println(output);
+		return output ;
+		
+	}
+}

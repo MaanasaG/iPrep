@@ -1,0 +1,34 @@
+package com.org.simplePbms;
+
+
+public class Node {
+
+	int data;
+	Node link;
+	
+	public Node(){
+		link=null;
+		data=0;
+	}
+	
+	public Node(int d, Node l){	
+		data=d;
+		link=l;
+	}
+	
+	public void setLink(Node n){
+		link=n;		
+	}
+	public void setData(int d){
+		data=d;		
+	}
+	public int getData(){
+		return data;
+	}
+	
+	public Node getLink(Node n){
+		return link;
+		
+	}
+	
+}

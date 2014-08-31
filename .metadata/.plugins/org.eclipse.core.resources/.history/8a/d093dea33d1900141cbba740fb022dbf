@@ -1,0 +1,29 @@
+package com.org.logicalpbms;
+
+public class MissingNumber {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int[] list={1,2,3,4,5,6,8,10};
+        System.out.println(findMissingNumber(list));
+          
+	}
+
+	private static int findMissingNumber(int[] list) {
+		int result = 0,sum=0,t=0;
+		sum=(list.length+1*list.length)/2;
+		System.out.println(list.length);
+		for (int k=0;k<list.length;k++)
+		{
+			t=t+list[k];
+		}
+		
+		result=sum-t;
+		
+		return result;
+	}
+
+}

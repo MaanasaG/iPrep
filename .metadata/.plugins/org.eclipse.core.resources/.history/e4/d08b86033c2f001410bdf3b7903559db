@@ -1,0 +1,137 @@
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.StringTokenizer;
+
+
+public class Reverse {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		String input="buddi";
+		// System.out.println("Mirror Reversal is: "+mirrorReverse(input));
+		// System.out.println("Word Reversal is: "+ wordReversal(input));
+		// System.out.println("Input string is "+PalendromeCheck(input));
+		// System.out.println("First Palendrome Word in input String is "+FirstPalendromeWord(input));
+		 //System.out.println("First instance of a substring in actual is"+firstInstanceofString("is", input));
+		// System.out.println(ComputeALLPermutations(input));
+		// System.out.println("Removed Dupes From Input :"+removeDUpes(input));
+		System.out.println(FirstNonRepeatedCharacter(input));
+		 
+	}
+		
+
+	private static int FirstNonRepeatedCharacter(String input) {
+		int[] charCount = new int[256];	
+		char resultIndex='N';
+		for(int i=0;i<input.length();i++){
+			charCount[input.charAt(i)]++;	
+			System.out.println("------>"+input.charAt(i)+" - is: "+charCount[input.charAt(i)]);
+		}
+		
+		for(int i=0;i<input.length();i++){	
+			if(charCount[input.charAt(i)]==1){			
+				resultIndex=input.charAt(i);
+				System.out.println(resultIndex);
+				break;			
+			}
+			
+		}
+		return resultIndex;
+	}
+
+
+	private static String removeDUpes(String input) {
+		HashSet result = new HashSet();
+		StringBuffer output= new StringBuffer();
+		String[] tokens= input.split(" ");
+		List list= new ArrayList();
+		/*for(int i=0;i<tokens.length;i++){
+			if(result.add(tokens[i])){
+				output.append(tokens[i]);
+				output.append(" ");
+			}
+		}*/
+		for(int i=0;i<tokens.length;i++){
+		if(!list.contains(tokens[i])){
+			list.add(tokens[i]);
+			output.append(tokens[i]);
+			output.append(" ");
+		}
+		
+		}
+		return output.toString();
+	}
+
+
+	private static String ComputeALLPermutations(String input) {
+		StringBuffer output= new StringBuffer();
+		String[] myDictionary = new String[20];
+		
+		
+		return "";
+	}
+
+
+	private static int  firstInstanceofString(String string, String input) {
+		String[] tokens= input.split(" ");
+		int resultIndex=-1;
+		for(int i=0; i<=tokens.length-1;i++){
+			if(tokens[i].equals(string)){
+				resultIndex=i;
+			}
+		}
+		
+		
+		return resultIndex;
+	}
+
+
+	private static String FirstPalendromeWord(String input) {
+		String[] tokens= input.split(" ");
+		StringBuffer result = new StringBuffer();
+		for(int i=0; i<=tokens.length-1;i++){
+			if(PalendromeCheck(tokens[i])){
+				result.append(tokens[i]);
+				System.out.println(result);
+				break;
+			}
+		}	
+		return result.toString();
+	}
+
+
+	private static boolean PalendromeCheck(String input) {
+		String check = mirrorReverse(input);
+		if(check.equals(input)){
+			return true;
+		}
+		return false;
+		
+	}
+
+
+	private static String wordReversal(String input) {
+		StringBuffer output = new StringBuffer();
+		String[] tokens= input.split(" ");
+		//StringTokenizer tokens1 = new StringTokenizer(input);
+		for (int i=tokens.length-1; i>=0; i--){	
+			output.append(tokens[i]);	
+			output.append(" ");
+		}
+		return output.toString();
+	}
+
+
+	private static String  mirrorReverse(String input) {
+		StringBuffer output = new StringBuffer();	
+		for (int i=input.length()-1; i>=0; i--){
+			output.append(input.charAt(i));
+		}
+		return output.toString();
+      
+	}
+
+}

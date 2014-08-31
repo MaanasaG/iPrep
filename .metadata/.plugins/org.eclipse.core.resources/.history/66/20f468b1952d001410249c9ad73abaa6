@@ -1,0 +1,19 @@
+package com.org.simplePbms;
+
+public class WordCountAndAppend {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		String s ="My name is Maanasa";
+		WordCount(s);
+
+	}
+
+	private static void WordCount(String s) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

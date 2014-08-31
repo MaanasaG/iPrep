@@ -1,0 +1,39 @@
+package com.org.simplePbms;
+
+public class LinkedList{
+	public Node start;
+	public Node end;
+	int size;
+	
+	public LinkedList(){
+		start = null;
+		end = null;
+		size = 0;
+	}
+	public boolean isEmpty(){
+		return start == null;
+	}
+	public int getSize(){
+		return size;
+	}
+	public void addNodetoTail(){
+		
+	}
+	public void deleteNode(){
+		
+	}
+	public void addNodeAtFirst(int data){
+		Node newNodeToAdd =new  Node(data, null);
+		size++;
+		if(start == null){
+			start=newNodeToAdd;
+			newNodeToAdd=end;	
+		}
+		else{		
+			newNodeToAdd.setLink(start);
+			start = newNodeToAdd;
+		}
+	}
+	
+	
+}

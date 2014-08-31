@@ -1,0 +1,14 @@
+package com.org.logicalpbms;
+
+import org.junit.Test;
+
+
+
+public class MissingNumberTest {
+
+	@Test
+	public void test() {
+		fail("Not yet implemented");
+	}
+
+}

@@ -1,0 +1,18 @@
+package com.org.simplePbms;
+
+public class LinkedListDemo {
+	
+	public static void main(String[] args){
+LinkedList list = new LinkedList();
+list.addNodeAtFirst(5);
+list.addNodeAtFirst(4);
+list.addNodeAtFirst(3);
+list.addNodeAtFirst(2);
+list.addNodeAtFirst(1);
+list.addNodeAtFirst(1);
+
+System.out.println(list);
+System.out.println(list.getSize());
+
+	}
+}

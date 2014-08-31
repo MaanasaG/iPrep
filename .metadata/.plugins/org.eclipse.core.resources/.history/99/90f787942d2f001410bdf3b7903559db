@@ -1,0 +1,19 @@
+
+public class Reverse {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		String input="My";
+		System.out.println(input.length());
+		StringBuffer output = new StringBuffer();
+		System.out.println(input.charAt(1));
+		for (int i=input.length()-1; i>0; i++){
+			System.out.println(input.charAt(i));
+			output.append(input.charAt(i));
+		}
+      System.out.println(output.toString());
+	}
+
+}

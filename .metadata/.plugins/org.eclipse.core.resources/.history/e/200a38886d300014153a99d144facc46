@@ -1,0 +1,24 @@
+package com.org.sorting;
+
+public class InsertionSort {
+
+	
+	public static void main(String[] args) {
+		int[] A={3,9,1,6,28,5};
+		InsertionSorter(A);
+	}
+
+	private static void InsertionSorter(final int[] a) {
+		for(int i =0;i <a.length;i++){
+			int curr= a[i];
+			int j=i-1;
+			while (j>0&& a[j]>a[curr]){
+				a[j+1]=a[j];
+				j--;
+			}
+			a[j+1]=curr;
+		}
+		
+		
+	}
+}

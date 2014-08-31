@@ -1,0 +1,26 @@
+package com.org.logicalpbms;
+
+public class MissingNumber {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		int[] list={0,1,2,3,4,5,7,8,9};				
+		int n=10;
+		System.out.println("Missing Number is:"+findMissingNumber(list,n));
+          
+	}
+
+	public static int findMissingNumber(int[] list,int endOfList) {
+		int result = 0,sum=0;
+		int sumOfN=(endOfList*(endOfList+1))/2;
+		for (int k=0;k<list.length;k++)
+		{
+		sum+=list[k];
+		}
+		result=sumOfN-sum;
+		return result;
+		}
+
+}

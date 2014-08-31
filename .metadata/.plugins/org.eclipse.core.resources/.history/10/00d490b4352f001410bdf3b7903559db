@@ -1,0 +1,90 @@
+import java.util.StringTokenizer;
+
+
+public class Reverse {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		String input="my name is aba";
+		 System.out.println("Mirror Reversal is: "+mirrorReverse(input));
+		 System.out.println("Word Reversal is: "+ wordReversal(input));
+		 System.out.println("Input string is "+PalendromeCheck(input));
+		 System.out.println("First Palendrome Word in input String is "+FirstPalendromeWord(input));
+		 System.out.println("First instance of a substring in actual is"+firstInstanceofString("is", input));
+		 System.out.println(ComputeALLPermutations(input));
+		 
+		 
+		 
+	}
+		
+
+	private static String ComputeALLPermutations(String input) {
+		
+		
+		
+		return "";
+	}
+
+
+	private static int  firstInstanceofString(String string, String input) {
+		String[] tokens= input.split(" ");
+		int resultIndex=-1;
+		for(int i=0; i<=tokens.length-1;i++){
+			if(tokens[i].equals(string)){
+				resultIndex=i;
+			}
+		}
+		
+		
+		return resultIndex;
+	}
+
+
+	private static String FirstPalendromeWord(String input) {
+		String[] tokens= input.split(" ");
+		StringBuffer result = new StringBuffer();
+		for(int i=0; i<=tokens.length-1;i++){
+			if(PalendromeCheck(tokens[i])){
+				result.append(tokens[i]);
+				System.out.println(result);
+				break;
+			}
+		}	
+		return result.toString();
+	}
+
+
+	private static boolean PalendromeCheck(String input) {
+		String check = mirrorReverse(input);
+		if(check.equals(input)){
+			return true;
+		}
+		return false;
+		
+	}
+
+
+	private static String wordReversal(String input) {
+		StringBuffer output = new StringBuffer();
+		String[] tokens= input.split(" ");
+		//StringTokenizer tokens1 = new StringTokenizer(input);
+		for (int i=tokens.length-1; i>=0; i--){	
+			output.append(tokens[i]);	
+			output.append(" ");
+		}
+		return output.toString();
+	}
+
+
+	private static String  mirrorReverse(String input) {
+		StringBuffer output = new StringBuffer();	
+		for (int i=input.length()-1; i>=0; i--){
+			output.append(input.charAt(i));
+		}
+		return output.toString();
+      
+	}
+
+}

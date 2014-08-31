@@ -1,0 +1,13 @@
+package com.org.simplePbms;
+
+public class LinkedListScratch {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+	
+
+	}
+
+}

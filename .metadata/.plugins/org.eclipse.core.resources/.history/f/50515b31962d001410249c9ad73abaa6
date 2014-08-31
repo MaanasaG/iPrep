@@ -1,0 +1,27 @@
+package com.org.simplePbms;
+
+public class WordCountAndAppend {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		String s ="My name is Maanasa";
+		String output=WordCount(s);
+
+	}
+
+	public static String WordCount(String s) {
+		
+		
+		
+		
+		
+		
+		
+		return s;
+		
+		
+	}
+
+}

@@ -1,0 +1,16 @@
+package com.org.simplePbms;
+
+public class LinkedList {
+
+	private Node head;
+	
+	public void insert(int data){
+		Node newNode = new Node(data);
+		newNode.next=this.head;
+		this.head=newNode;
+	}
+	
+	public void delete(int data){
+		
+	}
+}

@@ -1,0 +1,35 @@
+package com.org.simplePbms;
+
+import java.util.LinkedList;
+import java.util.List;
+
+public class Node {
+
+	Node next =null;
+	int data;
+	public Node(int d){
+		data= d;
+	}
+	void AppendToTail(int d){
+		Node end= new Node(d);
+		Node n =this;
+		while(n.next!=null){
+			n = n.next;
+		}
+		n.next=end;
+	}
+	
+	public static void main(String[] args){
+		  
+			 LinkedList<Integer> l = new LinkedList<Integer>();
+			 l.add(3);
+			 l.add(0, 2);
+		 	 l.add(0, 1);
+			 l.set(0, 6);
+			 l.addFirst(null);
+			 l.remove(2);
+			 l.removeLast();
+			 System.out.println(l);
+			
+	}
+}

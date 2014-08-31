@@ -1,0 +1,17 @@
+package com.org.strings;
+
+public class StringRotationPractice {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		String input= "Amazon";
+		System.out.println(checkRotation(input));
+
+	}
+
+	
+	
+	
+}

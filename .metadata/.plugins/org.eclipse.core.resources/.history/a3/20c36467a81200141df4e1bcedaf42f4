@@ -1,0 +1,43 @@
+package com.org.search;
+
+public class StringOperations {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+          String reservedString= doReverse("Maanasa");
+          System.out.println(reservedString);
+          String reservedString1= doReverseRecursively("Vamsi");
+          System.out.println(reservedString1);
+		
+	}
+
+	private static String doReverse(String str) {
+		
+		if(null==str||str.length()<1){
+			return str;
+		}
+		else{
+			
+		return new StringBuffer(str).reverse().toString();	
+		
+		}		
+		
+				
+	}
+private static String doReverseRecursively(String str) {
+		
+		if(null==str||str.length()<1){
+			return str;
+		}
+		else{
+			String s=str.charAt(0).toString();
+		return new StringBuffer(str).substring(1)+;	
+		
+		}		
+		
+				
+	}
+}

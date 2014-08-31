@@ -1,0 +1,13 @@
+package com.org.simplePbms;
+
+public class CheckAnagrams {
+
+	public static void main(String args[]){
+		
+		
+		
+		
+	}
+	
+	
+}

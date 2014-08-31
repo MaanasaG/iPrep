@@ -1,0 +1,21 @@
+package com.org.simplePbms;
+
+public class LinkedList {
+private Node head;
+
+
+ public void addNodeAtFirst(int data){
+	Node newNode = new Node(data);
+	newNode.setNextNode(this.head); 
+	this.head=newNode;	 
+}
+ public String printString(){
+		String result = "{";
+		Node current = this.head;
+		while(current!=null){
+			result += current.printString()+",";
+		}
+		
+	}
+
+}

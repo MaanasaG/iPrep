@@ -1,0 +1,15 @@
+package com.org.simplePbms;
+
+public class Euclids {
+
+	public static void main(String[] args) {
+		int i=euclidsalgo(25,10);
+	}
+
+	public static int euclidsalgo(int i, int j) {
+		
+		if(j==0)return i;	
+		return euclidsalgo(j,i%j);
+		
+	}
+}
