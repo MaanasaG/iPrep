@@ -1,6 +1,8 @@
 package com.org.strings;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class WordCountAndAppend {
@@ -11,6 +13,7 @@ public class WordCountAndAppend {
 	public static void main(String[] args) {
 		String s ="My name name name  name is Maanasa";
 		System.out.println(WordCount(s));
+		
 
 	}
 
@@ -31,5 +34,5 @@ public class WordCountAndAppend {
 		}
 		return sb.toString();	
 	}
-
+	
 }

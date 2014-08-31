@@ -13,3 +13,9 @@
 1409499714377	Rename package 'com.org.simplePbms.Strings'
 1409499725051	Rename package 'com.org.Numbers'
 1409500565324	Delete element
+1409503701272	Rename type 'IsSubstring'
+1409503711406	Rename type 'createPermutationsCheck'
+1409503720397	Rename type 'createSubstring'
+1409503730607	Rename type 'splitString'
+1409506020026	Rename method 'removeString'
+1409516171805	Delete element

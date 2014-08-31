@@ -1,0 +1,17 @@
+package com.org.strings;
+
+public class StarTheIdenticalChars {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		String input = "maanasa";
+		starTheIdenticalChars(input);
+		
+		
+		
+
+	}
+
+}

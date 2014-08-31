@@ -1,0 +1,19 @@
+package com.org.strings;
+
+public class IsSubstring {
+   public static void main(String[] args){
+	   String first="maanasa vamsi rianu blah blah and blah";
+	   String second="and";
+	   checkSubstring(first,second);
+   }
+
+private static boolean checkSubstring(String first, String second) {
+	
+	
+	
+	
+	return false;	
+}
+	
+	
+}

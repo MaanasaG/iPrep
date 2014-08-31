@@ -1,0 +1,20 @@
+package com.org.strings;
+
+public class RemoveSpecificCharcaters {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		 String first="maanasa vamsi rianu";
+		 String second="vamsi";
+		  if(first.length()>second.length()){
+                System.out.println(countOccurences(first,second));
+		   }
+		   else{
+			   System.out.println(countOccurences(second,first)); 
+		   }
+
+	}
+
+}

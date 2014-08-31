@@ -1,0 +1,19 @@
+package com.org.numbers;
+
+public class Factorial {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		int input =3;
+		System.out.println(factorial(input));
+
+	}
+
+	private static void factorial(int input) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

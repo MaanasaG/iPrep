@@ -1,0 +1,29 @@
+package com.org.strings;
+
+public class CountOccurences {
+    public static void main(String[] args){
+    	 String first="maanasa vamsi rianu blah blah and blah";
+		 String second="blah blah";
+		  if(first.length()>second.length()){
+              System.out.println(countOccurences(first,second));
+		   }
+		   else{
+			   System.out.println(countOccurences(second,first)); 
+		   }
+	
+    }
+    private static int countOccurences(String first, String second) {
+    	int lastIndex = 0;
+    	int count =0;
+		while(lastIndex!=-1){
+			lastIndex = first.indexOf(second,lastIndex);
+			if(lastIndex!=-1){
+				count++;
+				
+			}
+			
+			
+		}	
+		return 0;
+	}
+}

@@ -1,0 +1,11 @@
+package com.org.strings;
+
+public class ISsubstring {
+
+	   public static void main(String[] args){   
+		   String first="maanasa vamsi rianu blah blah and blah";
+		   String second=" blah and blah";
+           checkSubstring(first,second);
+	   }
+	
+}

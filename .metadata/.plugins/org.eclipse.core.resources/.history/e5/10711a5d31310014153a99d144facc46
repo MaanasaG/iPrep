@@ -1,0 +1,24 @@
+package com.org.strings;
+
+public class CountOccurences {
+    public static void main(String[] args){
+    	 String first="maanasa vamsi rianu blah blah and blah blah";
+		 String second="blah";
+		  if(first.length()>second.length()){
+              System.out.println(countOccurences(first,second));
+		   }
+		   else{
+			   System.out.println(countOccurences(second,first)); 
+		   }
+	
+    }
+    private static int countOccurences(String str, String findStr) {
+    	int lastIndex = 0;
+    	int count =0;
+        while ((lastIndex = str.indexOf(findStr, lastIndex)) != -1) {
+            count++;
+            lastIndex += findStr.length() - 1;
+        }
+		return count;
+	}
+}

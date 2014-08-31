@@ -9,6 +9,18 @@ import com.org.numbers.MissingNumber;
 
 public class MissingNumberTest {
 
+	/*empty array
+	 * 1number array
+	 * max numbers array
+	 * array with missing
+	 * array without missing
+	 * array of characters
+	 * string.convert to int and pass
+	 * negative numbers
+	 * sorted and not sorted inputs
+	 * null
+	 * sql injection
+	 */
 	@Test
 	public void test() {
 		int n=10;	

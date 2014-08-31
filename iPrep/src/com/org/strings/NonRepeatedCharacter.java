@@ -1,49 +1,72 @@
 package com.org.strings;
 
-import java.util.HashSet;
+
 
 public class NonRepeatedCharacter {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+       String input="lovely";
+       //System.out.println(input.trim());
+      // System.out.print(nonDuplicateCharacter(input.trim()));
+       System.out.print(StringCompression(input));
+		
+	}
+
+
+	private static String StringCompression(String input) {
+		int[] charcount = new int[256];
+		StringBuffer output = new StringBuffer();
+		for(int i=0;i<input.length();i++){
+			charcount[input.charAt(i)]++;
+		}
+		for(int i=0;i<input.length();i++){
+			if(charcount[input.charAt(i)]==1){
+				output.append(input.charAt(i));
+				//output.append(charcount[input.charAt(i)]);
+			}
+			
+		}
+		return output.toString();
+	}
+
+
+	private static char nonDuplicateCharacter(String input) {
+		int[] charCount = new int[256];	
+		int i;
+		for(i=0;i<input.length();i++){		
+		charCount[input.charAt(i)]++;	
+		//System.out.println("------>"+input.charAt(i)+" - is: "+charCount[input.charAt(i)]);
+		}//for 1
+		for(i=0;i<input.length();i++){
+			if(charCount[input.charAt(i)]==1){
+				return input.charAt(i) ;
+			}			
+		}
+		return 0;
+	}
 	
-			public static void main(String[] args) {
-				String input="Prashanthp";
-				
-				System.out.println(findfirstNonrepeatedNumber(input));	
-				//System.out.println(findfirstNonrepeatedNumberOtherWay(input));
-			    }
+	private static String characterCount(String input) {
+		String mystr="";
+		char last =input.charAt(0);
+		int count=1;
+		for(int i=0;i<input.length();i++){	
+			if(input.charAt(i)==last){
+				count++;
+			}
+			else{
+				mystr+=last+""+count;
+				last=input.charAt(i);
+				count=1;
+			}
 			
-			
-			
-				public static char findfirstNonrepeatedNumber(String input) {
-					System.out.println("length of list :"+input.length());
-					char c='c';
-					int j;
-					if(input!=null&&(!(input.isEmpty())&input!=null&input.length()>0)){
-						for(int i=0;i<=input.length()-1;i++){
-							for (j=i+1;j<=input.length()-1;j++){
-								System.out.println(i);
-								System.out.println(j);
-							    if(input.charAt(i)==input.charAt(j)){							    							
-													
-								break;
-							}//if					
-					}//first for
-							if(j==input.length()){
-								c=input.charAt(i);
-								break;
-								
-							}
-						}
-						
-					}
-					if (c=='c'){				
-						System.out.println("Unacceptble Input!");
-					}
-					else{
-						System.out.println("Result :"+c);
-					}
-					return c;
-				}
-			
-				
-				
+		}
+		
+		return mystr+last+count;
+	}//me
+	
+	
 }

@@ -1,0 +1,76 @@
+package com.org.strings;
+
+public class NonRepeatedCharacter {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+       String input="abracadabra";
+       System.out.println(input.trim());
+       System.out.print(nonDuplicateCharacter(input.trim()));
+       //System.out.print(StringCompression(input));
+		
+	}
+
+	private static char nonDuplicateCharacter(String input) {
+		int[] charCount = new int[256];	
+		int i;
+		for(i=0;i<input.length();i++){		
+		charCount[input.charAt(i)]++;	
+		}
+		for(i=0;i<input.length();i++){
+			if(charCount[input.charAt(i)]==1){
+				return input.charAt(i) ;
+			}
+			else{
+				return 'N';
+			}
+			
+		}
+		return 0;
+	}	
+	
+	private static String StringCompression(String input) {
+		String mystr="";
+		char last =input.charAt(0);
+		int count=1;
+		for(int i=0;i<input.length();i++){	
+			if(input.charAt(i)==last){
+				count++;
+			}
+			else{
+				mystr+=last+""+count;
+				last=input.charAt(i);
+				count=1;
+			}
+			
+		}
+		
+		return mystr+last+count;
+	}//me
+	
+	/*private static String StringCompression(String input) {
+		String mystr="";
+		char last =input.charAt(0);
+		int count=1;
+		for(int i=0;i<input.length();i++){	
+			if(input.charAt(i)==last){
+				count++;
+			}
+			else{
+				mystr+=last+""+count;
+				last=input.charAt(i);
+				count=1;
+			}
+			
+		}
+		
+		return mystr+last+count;
+	}//me
+	 * 
+	 * 
+	 * 
+	 */
+}

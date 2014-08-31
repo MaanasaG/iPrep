@@ -1,0 +1,20 @@
+package com.org.strings;
+
+public class IsSubstring {
+   public static void main(String[] args){
+	   String first="maanasa vamsi rianu blah blah and blah";
+	   int index=5;
+	   System.out.println(createSubstring(first,index));
+	   System.out.println(first.substring(5));
+   }
+
+private static String createSubstring(String first, int index) {
+	StringBuffer output= new StringBuffer();
+	for(int i=index;i<first.length();i++){
+	output.append(first.charAt(i));
+	}
+	return output.toString();
+}
+
+
+}

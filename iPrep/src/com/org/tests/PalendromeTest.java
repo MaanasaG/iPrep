@@ -7,7 +7,26 @@ import org.junit.Test;
 import com.org.strings.Palendrome;
 
 public class PalendromeTest {
-
+/*null
+ * empty
+ * only white spaces
+ * integer.tostring()
+ * lower case
+ * upper case
+ * ascii ansi characters
+ * extended strings
+ * binary numbers
+ * sql injection
+ * numbers in string
+ * spaces before and after
+ * special characters
+ * passing from other methods
+ * alphanumeric
+ * 
+ * 
+ */
+	
+	
 	@Test
 	public void test() {
 		String input="";

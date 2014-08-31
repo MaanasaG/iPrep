@@ -1,0 +1,22 @@
+package com.org.strings;
+
+public class StarTheIdenticalChars {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		String input = "maanasa";
+		starTheIdenticalChars(input);
+		
+		
+		
+
+	}
+
+	private static void starTheIdenticalChars(String input) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

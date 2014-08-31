@@ -1,0 +1,25 @@
+package com.org.strings;
+
+public class RemoveSpecificCharcaters {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		 String first="maanasa vamsi rianu";
+		 String second="vamsi";
+		  if(first.length()>second.length()){
+                System.out.println(removeSpecificCharacters(first,second));
+		   }
+		   else{
+			   System.out.println(removeSpecificCharacters(second,first)); 
+		   }
+
+	}
+
+	private static String removeSpecificCharacters(String first, String second) {
+		
+		return null;
+	}
+
+}

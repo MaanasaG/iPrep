@@ -1,0 +1,20 @@
+package com.org.strings;
+
+public class CountOccurences {
+    public static void main(String[] args){
+    	 String first="maanasa vamsi rianu blah blah and blah";
+		 String second="blahlah";
+		  if(first.length()>second.length()){
+              System.out.println(countOccurences(first,second));
+		   }
+		   else{
+			   System.out.println(countOccurences(second,first)); 
+		   }
+	
+    }
+
+	private static char[] countOccurences(String second, String first) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+}

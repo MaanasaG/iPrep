@@ -1,0 +1,55 @@
+package com.org.strings;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+public class WordCountAndAppend {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		String s ="My name name name  name is Maanasa";
+		//System.out.println(WordCount(s));
+		System.out.println(oTherwat(s));
+
+	}
+
+	public static String WordCount(String s) {		
+		String[] words = s.toLowerCase().split("\\s+");		
+		StringBuffer sb = new StringBuffer();
+		Map<String, Integer> wordCounts = new HashMap<String, Integer>();
+		for (String word : words) {
+		    Integer count = wordCounts.get(word);
+		    if (count == null) {
+		        count = 0;
+		    }
+		    wordCounts.put(word, count+1);
+		    sb.append(word);
+		    sb.append(count+1);
+		    sb.append(" ");
+		    
+		}
+		return sb.toString();	
+	}
+	public static String oTherwat(String s) {		
+		String[] words = s.toLowerCase().split(" ");	
+		Map list= new HashMap();
+		
+		for(int i=0;i<words.length;i++){
+			 int count = (Integer) list.get(words[i]);
+		if(list.containsKey(words[i])){
+			count++;
+			list.put(words[i], count);
+		}
+		list.put(words[i], count);
+		System.out.println(list);
+		
+		}
+		
+		return null;	
+	}
+	
+}

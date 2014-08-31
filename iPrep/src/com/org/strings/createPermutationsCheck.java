@@ -3,7 +3,7 @@ package com.org.strings;
 import java.util.HashSet;
 import java.util.Set;
 
-public class createPermutationsCheck {
+public class CreatePermutationsCheck {
  
     public static void main(String[] args) {
         String s = "ABC";

@@ -1,0 +1,23 @@
+package com.org.strings;
+
+public class ISsubstring {
+
+	   public static void main(String[] args){   
+		   String first="maanasa vamsi rianu blah blah and blah";
+		   String second=" blah and blah";
+		   if(first.length()>second.length()){
+           checkSubstring(first,second);
+		   }
+		   else{
+			   
+		   }
+	   }
+
+	private static void checkSubstring(String first, String second) {
+		
+		
+		
+		
+	}
+	
+}

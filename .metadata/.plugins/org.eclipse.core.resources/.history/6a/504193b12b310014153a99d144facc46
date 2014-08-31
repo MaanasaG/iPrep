@@ -1,0 +1,9 @@
+package com.org.strings;
+
+public class IsSubstring {
+   public static void main(String[] args){
+	   String first="maanasa vamsi rianu blah blah and blah"
+   }
+	
+	
+}
