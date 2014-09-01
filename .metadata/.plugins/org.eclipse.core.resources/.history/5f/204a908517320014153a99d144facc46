@@ -1,0 +1,39 @@
+package com.org.strings;
+
+import java.util.HashMap;
+import java.util.HashSet;
+
+public class TextFormOfStrings {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		int number=348;
+		HashMap<Integer,String> dictionary=new HashMap<Integer,String>();
+		dictionary.put(0, "Zero");
+		dictionary.put(1, "One");
+		dictionary.put(2, "Two");
+		dictionary.put(3, "Three");
+		dictionary.put(4, "Four");
+		printText(number,dictionary);
+	}
+
+	private static void printText(int n,
+			HashMap<Integer, String> dictionary) {
+	int[] individualNumbers = new int[256];
+	int i=0;
+	   while(n>0){  
+		   individualNumbers[i] = n%10;
+		   System.out.println(individualNumbers[i]);
+		   n=n- individualNumbers[i];
+		   i++;
+		   individualNumbers[i]=(n/10)%10;
+		   System.out.println(individualNumbers[i]);
+		   break;
+				   
+	   }
+		
+	}
+
+}

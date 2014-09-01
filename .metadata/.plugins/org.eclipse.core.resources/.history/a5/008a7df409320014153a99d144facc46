@@ -1,0 +1,9 @@
+package com.org.numbers;
+
+public class NonRepeatedNumber {
+	
+			public static void main(String[] args) {
+				
+				
+			}
+}

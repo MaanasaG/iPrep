@@ -1,0 +1,44 @@
+package com.org.numbers;
+
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+
+public class IntersectionOfArrays {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		
+		/*
+		
+		 * Example,if x is{1,3,5,7,9}and y is{9,3,9,4} then
+           intersection(x, 5, y, 4} should return {3, 9} or {9, 3}
+		 */
+		int[] array1= {1,3,5,7,9};
+		int[] array2= {9,3,9,4};
+		findIntersections(array1,array2);
+		
+	}
+
+	private static List findIntersections(int[] array1, int[] array2) {
+		HashSet<Integer> l = new HashSet<Integer>();
+		int k=0;
+		for(int i=0; i<array1.length;i++){
+			for(int j=0;j<array2.length;j++){
+				System.out.println("i"+array1[i]);
+				System.out.println("j"+array2[j]);
+				  if(array1[i]==array2[j]){
+					l.add(array1[i]);
+					System.out.println(l);
+					k++;	
+				}
+			}
+		}
+		//System.out.println(result);
+		return l;
+		
+	}
+
+}

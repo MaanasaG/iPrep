@@ -1,0 +1,17 @@
+package com.org.strings;
+
+import java.util.HashSet;
+
+public class TextFormOfStrings {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		int number=34;
+		HashMap dictionary=new HashMap();
+		dictionary.
+
+	}
+
+}

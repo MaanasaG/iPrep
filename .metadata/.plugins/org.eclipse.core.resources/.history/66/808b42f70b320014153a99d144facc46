@@ -1,0 +1,29 @@
+package com.org.numbers;
+
+public class FirstNonRepeatedNumber {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {	
+		int[] input= {1,3,5,7,9,3};
+		firstNonRepeatedNumber(input);
+
+	}
+
+	private static int firstNonRepeatedNumber(int[] input) {
+		int[] charcount = new int[256];
+		int result =0;
+		for(int i=0;i<input.length;i++){
+			charcount[input[i]]++;
+		}
+		for(int i=0;i<input.length;i++){
+			if(charcount[input[i]]==1){
+				result=input[i];
+				break;
+			}
+	    
+		}
+		return result;
+	}
+}

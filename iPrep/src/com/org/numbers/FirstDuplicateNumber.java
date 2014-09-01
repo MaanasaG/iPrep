@@ -1,0 +1,36 @@
+package com.org.numbers;
+
+import java.util.HashSet;
+
+public class FirstDuplicateNumber {
+	
+			public static void main(String[] args) {
+				
+				int[] input= {1,3,5,7,9,3};
+				firstRepeatedNumber(input);
+				firstRepeatedNumberOtherWay(input);
+
+			}
+
+			private static void firstRepeatedNumberOtherWay(
+					int[] input) {	
+				int result =0;
+				for(int i=0; i<input.length;i++){
+					for(int j=i+1; j<input.length;j++){
+						 if(input[i]==input[j]){
+							 result =input[i];
+							 System.out.println("--->"+result);
+						 }
+					 }
+				}	
+			}
+
+			private static void firstRepeatedNumber(int[] input) {
+				HashSet<Integer> result = new HashSet<Integer>();
+				for(int i=0; i<input.length;i++){
+					if(result.add(input[i])==false){
+						System.out.println(input[i]);
+					}
+				}
+			}
+}

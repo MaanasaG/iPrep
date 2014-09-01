@@ -1,0 +1,51 @@
+package com.org.numbers;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class SumOfPrimeNumbers {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		int n=4;
+	     //sumofPrime(n);
+	     sumOfPrimeOtherWay(n);
+
+	}
+
+	private static void sumOfPrimeOtherWay(int n) {
+		List l = new ArrayList();
+		int sum=0;
+		for(int i=1;i<=n;i++){
+			if(i%2!=0){
+				System.out.println(i);
+				l.add(i);
+			}	
+		}
+		for(int i=1;i<l.size();i++){
+			int j=(Integer) l.get(i);
+			sum=sum+j;
+		}
+		//System.out.println(sum);
+	}
+
+	private static void sumofPrime(int n) {
+		int sum=0;
+		for (int i=1; i<n;i++){
+			boolean b = true;
+			for (int j=2; j<i;j++){
+				if(i%j==0){
+					b=false;
+				}
+			}
+			if(b==true){		
+			sum=sum+i;	
+			}
+			
+		}
+		System.out.println(sum);
+	}
+
+}

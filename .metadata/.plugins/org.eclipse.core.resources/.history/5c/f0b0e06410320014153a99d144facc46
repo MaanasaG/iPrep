@@ -1,0 +1,18 @@
+package com.org.numbers;
+
+public class SumOfEven {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		int n =6;
+		sumOfEven(n);
+	}
+
+	private static void sumOfEven(int n) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}
